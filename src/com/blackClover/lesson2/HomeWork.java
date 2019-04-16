@@ -6,10 +6,18 @@ public class HomeWork {
     public static void main(String[] args) {
         HomeWork homeWork2 = new HomeWork();
 
-        homeWork2.initArray();
-        homeWork2.randomArray();
+       // homeWork2.initArray();
+       // homeWork2.randomArray();
         homeWork2.daysOfWeek();
     }
+    private static int getNextIntegerNumber(Scanner scannerInt) {
+        while (!scannerInt.hasNextInt()) {
+            System.out.println("Error! You did not enter an integer. Please repeat the input:");
+            scannerInt.next();
+        }
+        return scannerInt.nextInt();
+    }
+
 
     /**
      * Task №1
@@ -31,7 +39,6 @@ public class HomeWork {
     }
 
 
-
     /**
      * Task №2
      */
@@ -50,6 +57,7 @@ public class HomeWork {
             }
             System.out.print(randArray[i] + "\t");
         }
+        System.out.println("\n");
     }
 
     /**
@@ -58,7 +66,7 @@ public class HomeWork {
     public void daysOfWeek(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the day's weekday: ");
-        int numberDay = scanner.nextInt();
+        int numberDay = getNextIntegerNumber(scanner);
         switch (numberDay){
             case 1:
                 System.out.println("Monday");
