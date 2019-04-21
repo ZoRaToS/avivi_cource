@@ -1,15 +1,15 @@
 package com.blackClover.lesson2;
-
 import java.util.Scanner;
 
 public class HomeWork {
     public static void main(String[] args) {
         HomeWork homeWork2 = new HomeWork();
 
-       // homeWork2.initArray();
-       // homeWork2.randomArray();
+        homeWork2.initArray();
+        homeWork2.randomArray();
         homeWork2.daysOfWeek();
     }
+
     private static int getNextIntegerNumber(Scanner scannerInt) {
         while (!scannerInt.hasNextInt()) {
             System.out.println("Error! You did not enter an integer. Please repeat the input:");
@@ -17,7 +17,6 @@ public class HomeWork {
         }
         return scannerInt.nextInt();
     }
-
 
     /**
      * Task №1
@@ -35,9 +34,7 @@ public class HomeWork {
         }
         System.out.println();
         System.out.println();
-
     }
-
 
     /**
      * Task №2
@@ -61,13 +58,13 @@ public class HomeWork {
     }
 
     /**
-     *Task №3
+     * Task №3
      */
-    public void daysOfWeek(){
+    public void daysOfWeek() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the day's weekday: ");
         int numberDay = getNextIntegerNumber(scanner);
-        switch (numberDay){
+        switch (numberDay) {
             case 1:
                 System.out.println("Monday");
                 break;
@@ -89,10 +86,9 @@ public class HomeWork {
             case 7:
                 System.out.println("Sunday");
                 break;
-                default:
-                    System.out.println("Such a day does not exist");
-                    break;
-
+            default:
+                System.out.println("Such a day does not exist");
+                break;
         }
     }
 
