@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class HomeWork {
     public static void main(String[] args) {
         initArray();
-        randomArray();
-        daysOfWeek();
+//        randomArray();
+//        daysOfWeek();
     }
 
     private static int getNextIntegerNumber(Scanner scannerInt) {
@@ -21,14 +21,14 @@ public class HomeWork {
      * Task №1
      */
     public static void initArray() {
-        int[] oddNumbers = new int[100];
-        for (int i = 1; i < oddNumbers.length; i += 2) {
-            oddNumbers[i] = i;
+        int[] oddNumbers = new int[50];
+                for (int i = 0,j=0; i < 99; i++) {
+            oddNumbers[j] = i;
             System.out.print(oddNumbers[i] + "\t");
+            j++;
         }
         System.out.println();
         for (int i = oddNumbers.length - 1; i > 0; i -= 2) {
-            oddNumbers[i] = i;
             System.out.print(oddNumbers[i] + "\t");
         }
         System.out.println();
