@@ -1,13 +1,12 @@
 package com.blackClover.lesson2;
+
 import java.util.Scanner;
 
 public class HomeWork {
     public static void main(String[] args) {
-        HomeWork homeWork2 = new HomeWork();
-
-        homeWork2.initArray();
-        homeWork2.randomArray();
-        homeWork2.daysOfWeek();
+        initArray();
+        randomArray();
+        daysOfWeek();
     }
 
     private static int getNextIntegerNumber(Scanner scannerInt) {
@@ -21,7 +20,7 @@ public class HomeWork {
     /**
      * Task №1
      */
-    public void initArray() {
+    public static void initArray() {
         int[] oddNumbers = new int[100];
         for (int i = 1; i < oddNumbers.length; i += 2) {
             oddNumbers[i] = i;
@@ -39,7 +38,7 @@ public class HomeWork {
     /**
      * Task №2
      */
-    public void randomArray() {
+    public static void randomArray() {
         int[] randArray = new int[8];
         for (int i = 0; i < randArray.length; i++) {
             randArray[i] = (int) (1 + Math.random() * 10);
@@ -60,7 +59,7 @@ public class HomeWork {
     /**
      * Task №3
      */
-    public void daysOfWeek() {
+    public static void daysOfWeek() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the day's weekday: ");
         int numberDay = getNextIntegerNumber(scanner);
