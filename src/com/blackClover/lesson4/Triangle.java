@@ -16,10 +16,11 @@ public class Triangle {
     }
 
 
-    public double perimeter(){
-        return weight+length+height;
+    public double perimeter() {
+        return weight + length + height;
     }
-     public double square(){
-        return (length*height)/2;
-     }
+
+    public double square() {
+        return (length * height) / 2;
+    }
 }
