@@ -20,7 +20,7 @@ public class WorkerHourlyWage implements Salary {
     }
 
     public void setHoursWorked(int hoursWorked) {
-        if (hoursWorked > 0 && hoursWorked <= 200 ) {
+        if (hoursWorked > 0 && hoursWorked <= 200) {
             this.hoursWorked = hoursWorked;
         } else System.out.println("Кількість не може бути від'ємною i більшою за 200");
     }

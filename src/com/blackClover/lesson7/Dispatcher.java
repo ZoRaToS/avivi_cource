@@ -16,7 +16,7 @@ public class Dispatcher {
         // Виклик метода для підрахунку заробітної плати
         workerHourlyWage.salary(workerHourlyWage.getHoursWorked(), workerHourlyWage.getSalaryPerHour());
         System.out.println();
-       // Створення "робітника" з щомісячною ставкою
+        // Створення "робітника" з щомісячною ставкою
         WorkerMonthlyRate workerMonthlyRate = new WorkerMonthlyRate();
 
         System.out.print("Введіть розмір щомісячної ставки ставки: ");
@@ -24,7 +24,7 @@ public class Dispatcher {
 
         System.out.print("Введіть кількість відпацьованих днів: ");
         workerMonthlyRate.setWorkedDays(scn.nextInt());
-         // Виклик метода для підрахунку заробітної плати
+        // Виклик метода для підрахунку заробітної плати
         workerMonthlyRate.salary(workerMonthlyRate.getWorkedDays(), workerMonthlyRate.getMonthlyRate());
     }
 }

@@ -1,6 +1,7 @@
 package com.blackClover.lesson7;
 
 public class WorkerMonthlyRate implements Salary {
+
     private int monthlyRate; // щомічячна ставка
     static final int WORK_DAYS_IN_MONTH = 20; // фіксована кількість  робочих днів в місяць
     private int workedDays;// кількість відпрацьованих днів працівником
