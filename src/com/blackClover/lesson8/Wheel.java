@@ -2,12 +2,11 @@ package com.blackClover.lesson8;
 
 public class Wheel {
 
-
     private double wheelSize;
 
     public Wheel(double wheelSize) {
 
-        setWheelSize(wheelSize);
+        this.wheelSize = wheelSize;
     }
 
     public double getWheelSize() {

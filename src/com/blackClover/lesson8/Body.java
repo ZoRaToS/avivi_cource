@@ -5,7 +5,7 @@ public class Body {
     private String typeBody;
 
     public Body(String typeBody) {
-        setTypeBody(typeBody);
+        this.typeBody = typeBody;
     }
 
     public String getTypeBody() {

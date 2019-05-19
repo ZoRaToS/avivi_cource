@@ -7,7 +7,7 @@ public class SteeringWheel {
 
     public SteeringWheel(double steeringWheelSize) {
 
-       setSteeringWheelSize(steeringWheelSize);
+      this.steeringWheelSize = steeringWheelSize;
 
     }
 
