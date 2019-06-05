@@ -1,6 +1,6 @@
 package com.blackClover.lesson7;
 
 public interface Salary {
-    public void salary(int workedTime, double salary);
+     void salary(int workedTime, double salary);
 
 }

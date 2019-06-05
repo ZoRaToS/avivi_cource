@@ -16,7 +16,7 @@ public class Main {
 
         switch (numberOfTask) {
             case 1:
-                transportOrganization(scanner);
+
                 break;
             case 2:
                 System.out.print("Введіть число з клавіатури: ");
@@ -50,119 +50,12 @@ public class Main {
         return scannerInt.nextInt();
     }
 
-    private static void transportOrganization(Scanner scanner) throws IllegalArgumentException {
-        TransportOrganiztaion transOrg = new TransportOrganiztaion();
-        System.out.println("Оберіть спосіб пересування із вказаних: AIR, SEA, LAND");
-        String selectMovement = scanner.next();
-        String selectTransport;
-
-//        if (MovementType.valueOf(selectMovement) == MovementType.AIR) {
-//            transOrg.setMovementType(MovementType.valueOf(selectMovement));
-//            System.out.println("Обрано пересування" + transOrg.getMovementType().getMovementType() +
-//                    "Оберіть транспорт із вказаних: BALLOON, AIRSHIP, PLAN");
-//            selectTransport = scanner.next();
-//
-//            switch (selectTransport) {
-//                case "BALLOON":
-//                    transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-//                    System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-//                    break;
-//                case "AIRSHIP":
-//                    transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-//                    System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-//                    break;
-//                case "PLANE":
-//                    transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-//                    System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-//                    break;
-//                default:
-//                    System.out.println("Такого транспорту немає на даний момент");
-//            }
-//        } else {
-//            System.out.println("Такого способу пересування не існує");
-//        }
-//
-//        if (MovementType.valueOf(selectMovement) == MovementType.SEA) {
-//            transOrg.setMovementType(MovementType.valueOf(selectMovement));
-//            System.out.println("Обрано пересування" + transOrg.getMovementType().getMovementType() +
-//                    "Оберіть транспорт із вказаних: BOAT, SHIP, LINER");
-//            selectTransport = scanner.next();
-//
-//            switch (selectTransport) {
-//                case "BOAT":
-//                    transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-//                    System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-//                    break;
-//                case "SHIP":
-//                    transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-//                    System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-//                    break;
-//                case "LINER":
-//                    transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-//                    System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-//                    break;
-//                default:
-//                    System.out.println("Такого транспорту немає на даний момент");
-//            }
-//        } else {
-//            System.out.println("Такого способу пересування не існує");
-//        }
-//        if (MovementType.valueOf(selectMovement) == MovementType.LAND) {
-//            transOrg.setMovementType(MovementType.valueOf(selectMovement));
-//            System.out.println("Обрано пересування" + transOrg.getMovementType().getMovementType() +
-//                    "Оберіть транспорт із вказаних: BIKE, CAR, BUS");
-//            selectTransport = scanner.next();
-//
-//            switch (selectTransport) {
-//                case "BIKE":
-//                    transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-//                    System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-//                    break;
-//                case "CAR":
-//                    transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-//                    System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-//                    break;
-//                case "BUS":
-//                    transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-//                    System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-//                    break;
-//                default:
-//                    System.out.println("Такого транспорту немає на даний момент");
-//            }
-//        } else {
-//            System.out.println("Такого способу пересування не існує");
-//        }
-        switch (selectMovement) {
-            case "AIR":
-                transOrg.setMovementType(MovementType.valueOf(selectMovement));
-                System.out.println("Обрано пересування " + transOrg.getMovementType().getMovementType() +
-                        ". Оберіть транспорт із вказаних: BALLOON, AIRSHIP, PLAN");
-                selectTransport = scanner.next();
-                transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-                System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-                break;
-            case "SEA":
-                transOrg.setMovementType(MovementType.valueOf(selectMovement));
-                System.out.println("Обрано пересування " + transOrg.getMovementType().getMovementType() +
-                        ". Оберіть транспорт із вказаних: BOAT, SHIP, LINER");
-                selectTransport = scanner.next();
-                transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-                System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-                break;
-            case "LAND":
-                transOrg.setMovementType(MovementType.valueOf(selectMovement));
-                System.out.println("Обрано пересування " + transOrg.getMovementType().getMovementType() +
-                        ". Оберіть транспорт із вказаних: BIKE, CAR, BUS");
-                selectTransport = scanner.next();
-                transOrg.setVehicle(Vehicle.valueOf(selectTransport));
-                System.out.println("Обрано " + transOrg.getVehicle().getTransportType() + ". Щасливої дороги");
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + selectMovement);
-            }
-
+    private static MovementType detectMovementType(String input) {
+        if ("AIR".equals(input.toUpperCase())) {
+            return MovementType.AIR;
+        }
+        return null;
     }
-
 
     /**
      * Перевірка на парність\непарність

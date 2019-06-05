@@ -29,7 +29,7 @@ public class WorkerMonthlyRate implements Salary {
 
     @Override
     public void salary(int workedTime, double salary) {
-        double totalSalary = 0;
+        double totalSalary;
         if (workedTime < WORK_DAYS_IN_MONTH) {
             System.out.println("Відпрацьвано менше норми на: " + (WORK_DAYS_IN_MONTH - workedTime) + " днів");
             totalSalary = workedTime * (salary / WORK_DAYS_IN_MONTH);

@@ -15,4 +15,13 @@ public enum Vehicle {
     public String getTransportType() {
         return transportType;
     }
+
+    public static Vehicle chooseTransportType(String transportType) {
+        for (Vehicle vehicle : Vehicle.values()) {
+            if (vehicle.transportType.equals(transportType)) {
+                return vehicle;
+            }
+        }
+        return null;
+    }
 }

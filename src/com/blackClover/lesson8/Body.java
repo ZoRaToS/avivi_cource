@@ -12,8 +12,5 @@ public class Body {
         return typeBody;
     }
 
-    public void setTypeBody(String typeBody) {
-        this.typeBody = typeBody;
-    }
 
 }
